@@ -14,7 +14,7 @@ ms.author: jfields
 
 # View and download the Permissions analytics report
 
-This article describes how to view and download the **Permissions analytics report** in Permissions Management for AWS, Azure, and GPC authorization systems.
+This article describes how to view and download the **Permissions analytics report** in Permissions Management for AWS, Azure, and GCP authorization systems.
 
 >[!NOTE]
 >The Permissions analytics report can be downloaded in Excel and PDF formats.

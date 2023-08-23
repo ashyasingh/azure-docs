@@ -2,7 +2,7 @@
 title: Create and manage custom attributes for Azure AD Domain Services | Microsoft Docs
 description: Learn how to create and manage custom attributes in an Azure AD DS managed domain.
 services: active-directory-ds
-author: justinha
+author: AlexCesarini
 manager: amycolannino
 
 ms.assetid: 1a14637e-b3d0-4fd9-ba7a-576b8df62ff2
@@ -10,7 +10,7 @@ ms.service: active-directory
 ms.subservice: domain-services
 ms.workload: identity
 ms.topic: how-to
-ms.date: 03/06/2023
+ms.date: 03/07/2023
 ms.author: justinha
 
 ---
@@ -23,13 +23,13 @@ Azure AD supports adding custom data to resources using [extensions](/graph/exte
 - [onPremisesExtensionAttributes](/graph/extensibility-overview?tabs=http#extension-attributes) are a set of 15 attributes that can store extended user string attributes. 
 - [Directory extensions](/graph/extensibility-overview?tabs=http#directory-azure-ad-extensions) allow the schema extension of specific directory objects, such as users and groups, with strongly typed attributes through registration with an application in the tenant. 
 
-Both types of extensions can be configured By using Azure AD Connect for users who are managed on-premises, or MSGraph APIs for cloud-only users. 
+Both types of extensions can be configured by using Azure AD Connect for users who are managed on-premises, or Microsoft Graph APIs for cloud-only users. 
 
 >[!Note] 
 >The following types of extensions aren't supported for synchronization:  
->- Custom Security Attributes in Azure AD (Preview)
->- MSGraph Schema Extensions
->- MSGraph Open Extensions
+>- Custom security attributes in Azure AD (Preview)
+>- Microsoft Graph schema extensions
+>- Microsoft Graph open extensions
 
 
 ## Requirements 
@@ -44,7 +44,7 @@ After you create a managed domain, click **Custom Attributes (Preview)** under *
 
 ## Enable predefined attribute synchronization 
 
-Click **OnPremisesExtensionAttributes** to synchronize the attributes extensionAttribute1-15, also known as [Exchange custom attributes](/graph/api/resources/onpremisesextensionattributes?view=graph-rest-1.0).
+Click **OnPremisesExtensionAttributes** to synchronize the attributes extensionAttribute1-15, also known as [Exchange custom attributes](/graph/api/resources/onpremisesextensionattributes).
 
 ## Synchronize Azure AD directory extension attributes 
 
